@@ -1,5 +1,7 @@
 FROM alpine:3.18
 
-RUN echo "This is an alpine image"
+LABEL maintainer="andre.silva@docker.com"
+
+RUN apk add nginx
 
 CMD ["bin", "sh"]
